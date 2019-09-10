@@ -3,16 +3,12 @@ import './Search.css';
 import SearchForm from './SearchForm';
 
 
-export default function Search(){
+export default function Search(props){
     
-    return (
-    
+    return (    
     <section className='search'>
       <h2>Search for books!</h2>
-      <SearchForm />
+      <SearchForm state={props.state} getInputValues={props.getInputValues} />
     </section>
     );
-            
-            
-
 }
