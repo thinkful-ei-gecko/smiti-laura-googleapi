@@ -1,3 +1,11 @@
 .search {
-  background-color: lavender;
+  background-color: lightpink;
+}
+h2 {
+  margin: 0;
+  padding: 6px;
+}
+.inputs {
+  margin-bottom: 6px;
+  margin-right: 18px;
 }

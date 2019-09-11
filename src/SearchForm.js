@@ -7,29 +7,27 @@ export default class SearchForm extends React.Component{
   render(){
     return(
         <form onSubmit = {e => {this.props.getInputValues(e)}}>
-            <label htmlFor="search">Search: </label>
-            <input 
-            type="text" 
-            name='search' 
-            id='search' 
-            placeholder='Search for books'     
-            required />
-            <br />
-            <label htmlFor='printType'>Print type: </label>
-            <select name='printType'>
+            <label htmlFor='printType'>Print&nbsp;type:&nbsp;</label>
+            <select className='inputs'  name='printType'>
                 <option>All</option>
                 <option>Books</option>
                 <option>Magazines</option>
             </select>
-            <label htmlFor='bookType'>Book type: </label>
-            <select name='bookType'>
+            <label htmlFor='bookType'>Book&nbsp;type:&nbsp;</label>
+            <select className='inputs'  name='bookType'>
                 <option>ebooks</option>
                 <option>free-books</option>
                 <option>full</option>
                 <option>paid-ebooks</option>
                 <option>partial</option>
             </select>
-            <br />
+            <label htmlFor="search">Search:&nbsp;</label>
+            <input  className='inputs'  
+            type="text" 
+            name='search' 
+            id='search' 
+            placeholder='enter a search topic'     
+            required />
             <button type='submit'>Search</button>
 
         </form> 

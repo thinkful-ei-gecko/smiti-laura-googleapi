@@ -9,11 +9,13 @@ class App extends React.Component {
 
   constructor(){
     super();
-    this.state= {
+    this.state = {
         searchTerm: " ",
         printType: "All",
         bookType: "ebooks",
-        books: []
+        books: { 
+          items : [],
+        }
     };
   }
 
@@ -47,7 +49,7 @@ getBooks = (queryString) =>{
       console.log(res);
       this.setState({ books : res }); 
  })
- .catch(err => console.err('Error with your request'));
+ .catch(err => console.log('Error with your request'));
 }
 
 render () {
